@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+    <link href="static/style.css"" rel=" stylesheet">
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: white
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-text">
+        <div class="animation-area">
+            
+            <div style="display:flex;flex-direction:column; align-items:center;
+            justify-content:center;
+            text-align:center;">
+              <div class="animation-area" style="height: 100vh;display:flex;flex-direction:column; align-items:center;
+              justify-content:center;text-align:center;color:#FFE3DE;background-color:#0A043C">
+            <h1> Sorry. We are not able to make a prediction with this image </h1>
+            <h3 style="padding-top:20px;"> Please try capturing another image</h3>
+
+            <div class="column">
+                <img src="/static/{{orig}}" alt="Original" style="width:400px;height:500px;">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+</body>
+
+</html>

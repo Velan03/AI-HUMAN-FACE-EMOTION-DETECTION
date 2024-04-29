@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link href="static/style.css" rel="stylesheet">
+
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body style="background-color: #FFE3DE;">
+  <div class="banner-text" >
+    <div style="color:#0A043C" class="animation-area" style="height: 200vh;">
+
+      <h1 style="color:#0A043C">Here is the Prediction !</h1>
+      <div style="padding-top:20px;display:flex;align-items:center;
+      justify-content:center;text-align:center;" >
+        <div style="padding:20px;" >
+          <h3  style="color:#0A043C" >Input Image</h3>
+          <img src="/static/{{orig}}" alt="Original" style="width:400px;height:500px;">
+        </div>
+        <div style="padding:20px;">
+          <h3  style="color:#0A043C">Prediction</h3>
+          <img src="/static/{{pred}}" alt="Prediction" style="width:400px;height:500px;">
+        </div>
+      </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column; align-items:center;
+      justify-content:center;
+      text-align:center;">
+        <div class="animation-area" style="height: 200vh;display:flex;flex-direction:column; align-items:center;
+        justify-content:center;text-align:center;color:#0A043C;border: 1px solid; box-shadow: 5px 10px 18px #03506F; background-color: transparent; height: 600px; width: 50%;">
+        <div>
+          <h3 style="color: #1c0333;">Graphical Visualisation</h3>
+          <img src="/static/{{bar}}" alt="Visualisation" style="width:400px;height:500px;padding-top:20px;">
+        </div>
+        </div>
+      </div>
+
+
+
+    <div style="display:flex;flex-direction:column; align-items:center;
+    justify-content:center;
+    text-align:center;">
+      <div class="animation-area" style="height: 100vh;display:flex;flex-direction:column; align-items:center;
+      justify-content:center;text-align:center;">
+    <p>{{sentence}}</p>
+   
+
+      <div class="animation-area" style="height: 60vh;display:flex;flex-direction:column; align-items:center;
+      justify-content:center;
+      text-align:center;color:black">
+        <p style="color:black;font-size:30px;">Suggested Activities</p>
+        <br>
+        <p style="color:black;text-align: center;">{{activity}}</p>
+        <a href={{link}} target="_blank">Click here </a>
+        <img src="/static/images/{{image}}/img.jpg" alt="Visualisation" style="width:400px;height:500px;">
+      </div>
+
+    </div>
+  </div>
+  
+</div>
+ 
+
+</body>
+
+</html>

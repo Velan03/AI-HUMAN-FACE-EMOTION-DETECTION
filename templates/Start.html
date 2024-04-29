@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="static/style.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .button {
+      margin-top:20px;
+      background-color: #4CAF50;
+      border: none;
+      padding: 14px 40px;
+      border-radius: 12px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+    }
+  </style>
+
+  <title>Facial Emotion Investigator</title>
+
+</head>
+
+
+<body>
+  <!--Heading section-->
+  <div class="a" style="background-color:#FFE3DE;margin-top:0;position:relative; top: 0%;">
+    <div class="animation-area" style="display:flex;flex-direction:column; align-items:center;
+    justify-content:center;
+    text-align:center;height: 150vh;width:100%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;">
+    <div class="animation-area .container-sm" style="border: 1px solid; box-shadow: 5px 10px 18px #03506F;background-image: url(static/img1.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;margin:30px;color:white">
+    <div class="animation-area .container-sm" style="height: 80vh;width:90%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;  margin:30px;color:white; background-color: transparent;">
+    <div style="display: flex;flex-direction:row;">
+      <p style="font-size: 70px; color: black;float: left;">Facial Emotion Investigator</p>
+      
+    </div>
+   
+  </div>
+  </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+    
+  <!--manual section-->
+  
+  <div style="display:flex;flex-direction:column; align-items:center;
+  justify-content:center;
+  text-align:center;">
+    <div class="animation-area" style="height: 100vh;width:100%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;">
+    <div class="animation-area .container-sm" style="height: 70vh;width:70%;display:flex;flex-direction:column; align-items:center;
+    justify-content:center;text-align:center;background-color:#0A043C;margin:30px;color:white;border: 1px solid; box-shadow: 5px 10px 18px #03506F;">
+    <p style="font-size:xx-large;padding-bottom:50px;">Upload Image</p>
+    <p style="font-size:x-large;padding-bottom:20px;">To detect the emotion based on images you upload from your system</p>
+      <form action="/ManualUpload" method="post">
+        <input type="submit" name="Manually Upload Image" value="Manually Upload Image" class="button" />
+      </form>
+ 
+</div>
+  </div>
+  </div>
+
+  
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+  </script>
+</body>
+
+</html>
