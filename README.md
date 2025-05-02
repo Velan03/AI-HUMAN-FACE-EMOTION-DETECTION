@@ -1,4 +1,5 @@
 #AI Human Face Emotion Detection
+
 This project is a web-based application that uses artificial intelligence to detect human emotions from facial expressions in real time. Built using machine learning and computer vision technologies, the system captures a person's face through the webcam, analyzes facial features, and classifies emotions such as happy, sad, angry, surprised, neutral, and more.
 
 🔍 Features
